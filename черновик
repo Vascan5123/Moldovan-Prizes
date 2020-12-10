@@ -1,0 +1,88 @@
+/* uid: null,
+        email: null,
+        displayName: null,
+        photoURL: null, */
+
+
+
+        /* SetId(state, uid) {
+            state.uid = uid
+        },
+        SetEmail(state, email) {
+            state.email = email
+        },
+        SetDisplayName(state, displayName) {
+            state.displayName = displayName
+        },
+        SetPhotoURL(state, photoURL) {
+            state.photoURL = photoURL
+        } */
+
+
+        /* signup({ commit }, payload) {
+            firebase.auth().createUserWithEmailAndPassword(payload.email, payload.password)
+                .then(() => {
+                    firebase.auth().currentUser.updateProfile({ displayName: payload.name })
+                        .then(() => {
+                            commit('SetIsAuth', true)
+                            commit('SetEmail', payload.email)
+                        })
+                })
+                .catch(function (error) {
+                    console.log(error)
+                });
+        }, */
+
+
+        /* commit("SetEmail", res.user.email)
+                    commit("SetName", res.user.displayName)
+                    commit("SetPhotoURL", res.user.photoURL) */
+
+
+
+
+                    /* SetImageUrl({ commit }, payload) {
+            firebase.auth().currentUser.updateProfile({ photoURL: payload })
+                .then(() => {
+                    commit("SetPhotoURL", payload)
+                })
+                .catch(function (error) {
+                    console.log(error.message)
+                })
+        },
+        SetImageStore({ state, commit }, payload) {
+            var storageRef = firebase.storage().ref();
+            storageRef.child("images_avatar/" + state.uid).put(payload)
+            storageRef.child("images_avatar/" + state.uid).getDownloadURL()
+                .then(function (url) {
+                    firebase.auth().currentUser.updateProfile({ photoURL: url })
+                        .then(() => {
+                            commit("SetPhotoURL", url)
+                        })
+                        .catch(function (error) {
+                            console.log(error.message)
+                        })
+                })
+        },
+        SetName({ commit }, payload) {
+            firebase.auth().currentUser.updateProfile({ displayName: payload })
+                .then(() => {
+                    commit("SetDisplayName", payload)
+                })
+                .catch(function (error) {
+                    console.log(error.message)
+                })
+        }, */
+
+
+        /* commit("SetId", payload.uid)
+                commit("SetEmail", payload.email)
+                commit("SetDisplayName", payload.displayName)
+                commit("SetPhotoURL", payload.photoURL) */
+
+        /* isUserEmail: (state) => state.email,
+        isUserName: (state) => state.displayName,
+        isUserPhotoURL: (state) => state.photoURL, */
+
+
+        
