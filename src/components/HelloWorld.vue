@@ -35,13 +35,13 @@
         </v-card-title>
         <v-row justify="center">
           <img
-            width="40%"
+            width="30%"
             class="mr-10 img1"
             src="../assets/islai.png"
             @click="gotopage('https://islai.org/')"
           />
           <img
-            width="40%"
+            width="30%"
             class="img1"
             src="../assets/imi.png"
             @click="gotopage('http://www.math.md/')"
